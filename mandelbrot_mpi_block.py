@@ -157,39 +157,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-#Courbe de scalling (exemple de resultats) :
-
-# temps de calcul en fonction du nombre de processus
-  
-# speedup en fonction du nombre de processus
-
-# Efficacité en fonction du nombre de processus
-
-# Temps de calcul pour chaque processus
-
-# Ecart-type des temps de calcul entre processus
-
-# Solution du load balancing :
- # répartition cyclique des lignes entre les processus
- # Répartition dynamique 
- 
-# Conclusion: Découpage n'est pas forcément optimal selon la forme de l'ensemble de Mandelbrot. 
- 
- 
- 
-#présente moi les potentiels problèmes de la stratégie entrelacée
-# La stratégie entrelacée peut présenter plusieurs problèmes potentiels :
-# 1. Surcharge de communication : Comme chaque processus doit envoyer et recevoir 
-# des données fréquemment, cela peut entraîner une surcharge de communication,
-# surtout si le nombre de processus est élevé. Cela peut ralentir l'ensemble du calcul.
-# 2. Latence accrue : La communication fréquente entre les processus peut introduire
-# une latence supplémentaire, ce qui peut être problématique pour les applications
-# sensibles au temps.
-# 3. Complexité de mise en œuvre : La gestion de la communication entre les processus
-# peut ajouter de la complexité au code, rendant le développement et la maintenance
-# plus difficiles.
-# 4. Déséquilibre de charge : Si certaines parties du calcul sont plus intensives
-# que d'autres, certains processus peuvent finir leur travail plus tôt et rester
-# inactifs en attendant les autres, ce qui peut entraîner un déséquilibre de charge.
-# 5. Scalabilité limitée : La stratégie entrelacée peut ne pas bien se
